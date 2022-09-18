@@ -95,6 +95,28 @@ width:100%;
   padding-bottom: 5px;
 }
 
+.buttons{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  background-color: #05121f;
+  padding:5px;
+  cursor:pointer;
+  text-decoration: none;
+  color:#fff;
+  border:2px solid #05121f;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color:#05121f;
+}
+
 
 @media (min-width:640px){
   .grid{

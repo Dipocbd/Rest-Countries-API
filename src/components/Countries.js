@@ -15,6 +15,11 @@ const Countries = () => {
             fetchCountryData()
 
     }, [])
+
+    const removeCountry = (area) => {
+      const newCountry = countries.filter((country) => country.area !== area)
+      setCountries(newCountry)
+    }
     
   return (
     <>
@@ -31,8 +36,11 @@ console.log(country);
                     <h4>Population:<span>{population}</span></h4>
                     <h4>Region:<span>{region}</span></h4>
                     {/* <h4>Capital:<span>{capital[0]}</span></h4> */}
+                    <div className='buttons'><Link to={`/countries/${name}`}className="btn">Learn more</Link><button className="btn"
+                     onClick={() => removeCountry(area)}>Remove Country</button>
+                </div>
                     </div>
-                    <Link to={`/countries/${name}`}>Learn more</Link>
+                    
                 </div>
             </article>
         )
