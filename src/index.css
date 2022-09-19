@@ -117,6 +117,11 @@ width:100%;
   color:#05121f;
 }
 
+.btn-light{
+  background-color:#2b3743;
+  border:2px solid #2b3743;
+}
+
 
 @media (min-width:640px){
   .grid{
